@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 
 /**
+ * O webservice payroll precisa de uma declaração do worker
+ * O PROJETO PAYROLL NÃO UTILIZA BANCO DE DADOS, OU SEJA NÃO UTILIZA JPA
  * Serializable -> Permite que o objeto possa ser transofrmado em bytes
  * javax -> E interface e o hibernate e implementação, sempre tem que dar preferencia para interface. 
  * @author wepbi
