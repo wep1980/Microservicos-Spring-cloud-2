@@ -10,11 +10,12 @@ import br.com.waldirdev.hrpayroll.entities.Worker;
 
 /**
  * 1 - Para realizar a comunicação entre os projetos e necessario declarar uma interface com a assinatura das requisições que podem ser feitas
+ * @FeignClient (url = "localhost:8001") -> Como o projeto tera mais de uma instancia disponivel, essa abordagem não sera mais usada
  * @author wepbi
  *
  */
 @Component // Componente gerenciado pelo Spring, vai ser injetado em outras classes
-@FeignClient(name = "hr-worker" , url = "localhost:8001" , path = "/workers")
+@FeignClient(name = "hr-worker" , path = "/workers")
 public interface WorkerFeignClient {
 	
 	
